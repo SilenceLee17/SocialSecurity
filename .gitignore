@@ -1,0 +1,32 @@
+ld generated
+build/
+DerivedData
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+project.xcworkspace
+.DS_Store
+.swp
+
+# 忽略Xcode本地用户配置信息
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+xcshareddata/
+.metadata/
+# 忽略`Pods/`和`Podfile.lock`
+Pods/
+Podfile.lock
