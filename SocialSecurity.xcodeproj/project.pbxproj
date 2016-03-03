@@ -10,14 +10,16 @@
 		4CAD7D487CC52DE15CDEE039 /* libPods-SocialSecurityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3C229430D913CD705F6BFF /* libPods-SocialSecurityTests.a */; };
 		9E24F1D66E8B3882BF960211 /* libPods-SocialSecurityUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9FBE17461896B1FFFB8F5C /* libPods-SocialSecurityUITests.a */; };
 		ED98F0C77251C077B5B07E6E /* libPods-SocialSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE33F3DE18CA2332D8540299 /* libPods-SocialSecurity.a */; };
+		F33882C41C81A6CD00021CB9 /* LPSEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F33882BD1C81A6CD00021CB9 /* LPSEngine.m */; };
+		F33882C51C81A6CD00021CB9 /* LPSEngine+SocialSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = F33882C31C81A6CD00021CB9 /* LPSEngine+SocialSecurity.m */; };
+		F33882C81C81A70000021CB9 /* LPSBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F33882C71C81A70000021CB9 /* LPSBaseModel.m */; };
 		F3B033CA1C814F27008479B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B033C91C814F27008479B9 /* main.m */; };
-		F3B033CD1C814F27008479B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B033CC1C814F27008479B9 /* AppDelegate.m */; };
-		F3B033D01C814F27008479B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B033CF1C814F27008479B9 /* ViewController.m */; };
-		F3B033D31C814F27008479B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B033D11C814F27008479B9 /* Main.storyboard */; };
+		F3B033CD1C814F27008479B9 /* LPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B033CC1C814F27008479B9 /* LPSAppDelegate.m */; };
+		F3B033D01C814F27008479B9 /* LPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B033CF1C814F27008479B9 /* LPSViewController.m */; };
 		F3B033D51C814F27008479B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B033D41C814F27008479B9 /* Assets.xcassets */; };
-		F3B033D81C814F27008479B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B033D61C814F27008479B9 /* LaunchScreen.storyboard */; };
 		F3B033E31C814F27008479B9 /* SocialSecurityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B033E21C814F27008479B9 /* SocialSecurityTests.m */; };
 		F3B033EE1C814F27008479B9 /* SocialSecurityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B033ED1C814F27008479B9 /* SocialSecurityUITests.m */; };
+		F3BC0D3F1C82C331006806A1 /* LPSSocialSecurityContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BC0D3E1C82C331006806A1 /* LPSSocialSecurityContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,15 +49,19 @@
 		9A1764171355A8EF373AF337 /* Pods-SocialSecurityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialSecurityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialSecurityTests/Pods-SocialSecurityTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB3C229430D913CD705F6BFF /* libPods-SocialSecurityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialSecurityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE33F3DE18CA2332D8540299 /* libPods-SocialSecurity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialSecurity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33882BC1C81A6CD00021CB9 /* LPSEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPSEngine.h; sourceTree = "<group>"; };
+		F33882BD1C81A6CD00021CB9 /* LPSEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPSEngine.m; sourceTree = "<group>"; };
+		F33882C21C81A6CD00021CB9 /* LPSEngine+SocialSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LPSEngine+SocialSecurity.h"; sourceTree = "<group>"; };
+		F33882C31C81A6CD00021CB9 /* LPSEngine+SocialSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LPSEngine+SocialSecurity.m"; sourceTree = "<group>"; };
+		F33882C61C81A70000021CB9 /* LPSBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPSBaseModel.h; sourceTree = "<group>"; };
+		F33882C71C81A70000021CB9 /* LPSBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPSBaseModel.m; sourceTree = "<group>"; };
 		F3B033C51C814F27008479B9 /* SocialSecurity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSecurity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B033C91C814F27008479B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F3B033CB1C814F27008479B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F3B033CC1C814F27008479B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F3B033CE1C814F27008479B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F3B033CF1C814F27008479B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F3B033D21C814F27008479B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3B033CB1C814F27008479B9 /* LPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPSAppDelegate.h; sourceTree = "<group>"; };
+		F3B033CC1C814F27008479B9 /* LPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPSAppDelegate.m; sourceTree = "<group>"; };
+		F3B033CE1C814F27008479B9 /* LPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPSViewController.h; sourceTree = "<group>"; };
+		F3B033CF1C814F27008479B9 /* LPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPSViewController.m; sourceTree = "<group>"; };
 		F3B033D41C814F27008479B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3B033D71C814F27008479B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3B033D91C814F27008479B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3B033DE1C814F27008479B9 /* SocialSecurityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialSecurityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B033E21C814F27008479B9 /* SocialSecurityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialSecurityTests.m; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 		F3B033E91C814F27008479B9 /* SocialSecurityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialSecurityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B033ED1C814F27008479B9 /* SocialSecurityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialSecurityUITests.m; sourceTree = "<group>"; };
 		F3B033EF1C814F27008479B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3BC0D3D1C82C331006806A1 /* LPSSocialSecurityContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPSSocialSecurityContext.h; sourceTree = "<group>"; };
+		F3BC0D3E1C82C331006806A1 /* LPSSocialSecurityContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPSSocialSecurityContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,77 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F33882B71C81A6CD00021CB9 /* LPSEngineSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F33882B81C81A6CD00021CB9 /* Base */,
+				F33882BE1C81A6CD00021CB9 /* SocialSecurity */,
+			);
+			path = LPSEngineSDK;
+			sourceTree = "<group>";
+		};
+		F33882B81C81A6CD00021CB9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F33882BA1C81A6CD00021CB9 /* Models */,
+				F33882BB1C81A6CD00021CB9 /* Network */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F33882BA1C81A6CD00021CB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F33882C61C81A70000021CB9 /* LPSBaseModel.h */,
+				F33882C71C81A70000021CB9 /* LPSBaseModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F33882BB1C81A6CD00021CB9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F33882BC1C81A6CD00021CB9 /* LPSEngine.h */,
+				F33882BD1C81A6CD00021CB9 /* LPSEngine.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F33882BE1C81A6CD00021CB9 /* SocialSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				F33882BF1C81A6CD00021CB9 /* Context */,
+				F33882C01C81A6CD00021CB9 /* Models */,
+				F33882C11C81A6CD00021CB9 /* Network */,
+			);
+			path = SocialSecurity;
+			sourceTree = "<group>";
+		};
+		F33882BF1C81A6CD00021CB9 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				F3BC0D3D1C82C331006806A1 /* LPSSocialSecurityContext.h */,
+				F3BC0D3E1C82C331006806A1 /* LPSSocialSecurityContext.m */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		F33882C01C81A6CD00021CB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F33882C11C81A6CD00021CB9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F33882C21C81A6CD00021CB9 /* LPSEngine+SocialSecurity.h */,
+				F33882C31C81A6CD00021CB9 /* LPSEngine+SocialSecurity.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F3B033BC1C814F27008479B9 = {
 			isa = PBXGroup;
 			children = (
@@ -131,13 +210,12 @@
 		F3B033C71C814F27008479B9 /* SocialSecurity */ = {
 			isa = PBXGroup;
 			children = (
-				F3B033CB1C814F27008479B9 /* AppDelegate.h */,
-				F3B033CC1C814F27008479B9 /* AppDelegate.m */,
-				F3B033CE1C814F27008479B9 /* ViewController.h */,
-				F3B033CF1C814F27008479B9 /* ViewController.m */,
-				F3B033D11C814F27008479B9 /* Main.storyboard */,
+				F33882B71C81A6CD00021CB9 /* LPSEngineSDK */,
+				F3B033CB1C814F27008479B9 /* LPSAppDelegate.h */,
+				F3B033CC1C814F27008479B9 /* LPSAppDelegate.m */,
+				F3B033CE1C814F27008479B9 /* LPSViewController.h */,
+				F3B033CF1C814F27008479B9 /* LPSViewController.m */,
 				F3B033D41C814F27008479B9 /* Assets.xcassets */,
-				F3B033D61C814F27008479B9 /* LaunchScreen.storyboard */,
 				F3B033D91C814F27008479B9 /* Info.plist */,
 				F3B033C81C814F27008479B9 /* Supporting Files */,
 			);
@@ -255,7 +333,6 @@
 				TargetAttributes = {
 					F3B033C41C814F27008479B9 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 4NH6265WS9;
 					};
 					F3B033DD1C814F27008479B9 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -292,9 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B033D81C814F27008479B9 /* LaunchScreen.storyboard in Resources */,
 				F3B033D51C814F27008479B9 /* Assets.xcassets in Resources */,
-				F3B033D31C814F27008479B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,9 +517,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B033D01C814F27008479B9 /* ViewController.m in Sources */,
-				F3B033CD1C814F27008479B9 /* AppDelegate.m in Sources */,
+				F3B033D01C814F27008479B9 /* LPSViewController.m in Sources */,
+				F3B033CD1C814F27008479B9 /* LPSAppDelegate.m in Sources */,
+				F33882C51C81A6CD00021CB9 /* LPSEngine+SocialSecurity.m in Sources */,
+				F3BC0D3F1C82C331006806A1 /* LPSSocialSecurityContext.m in Sources */,
 				F3B033CA1C814F27008479B9 /* main.m in Sources */,
+				F33882C81C81A70000021CB9 /* LPSBaseModel.m in Sources */,
+				F33882C41C81A6CD00021CB9 /* LPSEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,25 +558,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		F3B033D11C814F27008479B9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3B033D21C814F27008479B9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F3B033D61C814F27008479B9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3B033D71C814F27008479B9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		F3B033F01C814F27008479B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -516,8 +576,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: do lps (8CQ2TZ5X3C)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: do lps (8CQ2TZ5X3C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -539,7 +599,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "e47a2996-104c-4619-92ed-faa160291ca1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -588,6 +648,7 @@
 			baseConfigurationReference = 8EFF4114A5B5C20CCB943206 /* Pods-SocialSecurity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SocialSecurity/Info.plist;
@@ -604,6 +665,7 @@
 			baseConfigurationReference = 0BAD873F34D5472C34116F7D /* Pods-SocialSecurity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SocialSecurity/Info.plist;

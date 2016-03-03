@@ -6,18 +6,23 @@
 //  Copyright © 2016年 lixingdong. All rights reserved.
 //
 
-#import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import "LPSAppDelegate.h"
+#import "LPSViewController.h"
+#import "LPSEngine+SocialSecurity.h"
+#import "LPSEngine.h"
+@interface LPSAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation LPSAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[LPSViewController alloc] init];
+    [self.window makeKeyAndVisible];
+     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
