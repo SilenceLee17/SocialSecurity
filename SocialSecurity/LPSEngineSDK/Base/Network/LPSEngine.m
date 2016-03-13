@@ -7,7 +7,6 @@
 //
 
 #import "LPSEngine.h"
-#define AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES
 static NSInteger const TIMEOUT_INTERVAL = 20;
 
 @interface LPSEngine()
