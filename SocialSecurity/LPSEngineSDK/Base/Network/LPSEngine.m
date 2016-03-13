@@ -7,7 +7,7 @@
 //
 
 #import "LPSEngine.h"
-
+#define AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES
 static NSInteger const TIMEOUT_INTERVAL = 20;
 
 @interface LPSEngine()
@@ -48,10 +48,10 @@ static NSInteger const TIMEOUT_INTERVAL = 20;
 }
 
 -(void)GETWithPath:(NSString *)path
-         parameters:(NSDictionary *)parameters
-           progress:(ProgressBlock)progress
-            success:(SuccessWithHeaderBlock)success
-            failure:(FailureBlock)failure{
+        parameters:(NSDictionary *)parameters
+          progress:(ProgressBlock)progress
+           success:(SuccessWithHeaderBlock)success
+           failure:(FailureBlock)failure{
     NSString *escapedPath = [path stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithDictionary:parameters];
     [self.httpManager GET:escapedPath parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -69,6 +69,10 @@ static NSInteger const TIMEOUT_INTERVAL = 20;
     self = [super init];
     if (self) {
         self.httpManager = [AFHTTPSessionManager manager];
+        AFSecurityPolicy *policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+        policy.allowInvalidCertificates = YES;
+        policy.validatesDomainName = NO;
+        self.httpManager.securityPolicy=policy;
         self.httpManager.requestSerializer.timeoutInterval = TIMEOUT_INTERVAL;
         self.httpManager.responseSerializer = [AFHTTPResponseSerializer serializer];
         self.httpManager.responseSerializer.acceptableContentTypes =
